@@ -8,8 +8,8 @@ const CopyAddress = ({ address }) => {
 
   useEffect(() => {
     if (copied) {
-      const timer = setTimeout(() => setCopied(false), 2000);
-      return () => clearTimeout(timer); // Clean up the timer if the component unmounts
+      const timer = setTimeout(() => setCopied(false), 1500);
+      return () => clearTimeout(timer);
     }
   }, [copied]);
 
