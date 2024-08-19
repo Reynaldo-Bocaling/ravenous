@@ -1,7 +1,8 @@
 import React from "react";
 import { socials } from "../constant";
 import { IoArrowForward, IoCopyOutline } from "react-icons/io5";
-
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import CopyAssress from "../components/CopyAssress";
 const Hero = () => {
   return (
     <section
@@ -39,12 +40,7 @@ const Hero = () => {
             </a>
           ))}
         </div>
-        <div className="flex items-center justify-center gap-4 md:gap-7 mx-auto bg-white shadow-xl shadow-red-950 py-3 px-7 rounded-full mb-9 md:mb-12">
-          <h1 className="text-xs md:text-lg text-black font-semibold ">
-            0x0ZSJA7A9D9S9AS8S7HBBS8S7S7888
-          </h1>
-          <IoCopyOutline className="text-xl md:text-4xl text-red-500" />
-        </div>
+        <CopyAssress address=" 0x0ZSJA7A9D9S9AS8S7HBBS8S7S7888" />
         <button className="btn-2 mb-9 md:mb-0"> BUY NOW</button>
       </div>
     </section>

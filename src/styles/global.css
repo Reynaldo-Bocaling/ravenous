@@ -189,6 +189,9 @@
     transform: translateX(15em);
 }
 
+.border-rounded {
+    border-radius: 0 20% 0 40%;
+}
 
 @media (max-width: 767px) {
     .hero-main {
